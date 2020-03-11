@@ -2,19 +2,14 @@
 
 Desenvolvimento de um Portifólio onde estarão todos os projetos que participei ou que criei no decorrer da carreira.
 
+## Guia
+
+Através dessas instruções você irá obter uma cópia do projeto e poderá executá-lo em sua máquina, para propósitos de desenvolvimento e teste. Leia as notas de deploy para descobrir como fazer deploy em produção.
+
 ## Template do Projeto
 
 https://www.figma.com/file/7xoTDOQn0cvuxCPkrGyF16/Portif%C3%B3lio?node-id=0%3A1
 
-**Abaixo tenho uma versão de documentação que será atualizado conforme o desenvolvimento for andando**
-
-# Título do Projeto
-
-Um parágrafo com a descrição do projeto
-
-## Guia
-
-Através dessas instruções você irá obter uma cópia do projeto e poderá executá-lo em sua máquina, para propósitos de desenvolvimento e teste. Leia as notas de deploy para descobrir como fazer deploy em produção.
 
 ### Pré-requisitos
 
@@ -82,8 +77,8 @@ Nós usamos [SemVer](http://semver.org/) para controle de versionamento. Para as
 
 ## Autores
 
-* **Billie Thompson** - *Texto Original* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Matheus Reis** - *Tradução para PT-BR* - [ReisDev](https://github.com/reisdev)
+* **Wanderson Henrique dos Santos** - *Desenvolvedor do Projeto* - [Wanhenri](https://github.com/Wanhenri)
+* **Matheus Reis** - *Desenvolvedor/Tutor/Code Review* - [ReisDev](https://github.com/reisdev)
 
 Veja também a lista de [colaboradores](https://github.com/your/project/contributors) que fizeram parte deste projeto.
 
@@ -97,6 +92,11 @@ Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.m
 * Inspiração
 * etc
 
+## Autores da versão da documentação
 
+Esse documento foi gerado a partir de template desenvolvido por:
+
+* **Billie Thompson** - *Texto Original* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Matheus Reis** - *Tradução para PT-BR* - [ReisDev](https://github.com/reisdev)
 
 
