@@ -63,9 +63,10 @@ Notas adicionais sobre como colocar o software em produção
 
 ## Construído com
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web utilizado
-* [Maven](https://maven.apache.org/) - Gerenciamento de dependências
-* [ROME](https://rometools.github.io/rome/) - Uasdo para gerar o Feed RSS
+* [React](https://pt-br.reactjs.org/) - O framework web utilizado
+* [npm](https://www.npmjs.com/) - Gerenciamento de dependências
+* [npx](https://www.npmjs.com/package/npx) - Gerenciamento de dependências
+* [styled components](https://styled-components.com/) - Estilização de componentes
 
 ## Como contruibuir
 
@@ -84,7 +85,7 @@ Veja também a lista de [colaboradores](https://github.com/your/project/contribu
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](LICENSE.md) para obter mais detalhes.
+Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](https://github.com/Wanhenri/PortfolioProjetos/blob/master/LICENSE) para obter mais detalhes.
 
 ## Créditos
 
