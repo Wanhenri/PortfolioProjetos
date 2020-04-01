@@ -1,12 +1,11 @@
 import React from 'react';
 
-import Header from '../src/components/Header'
+import Routes from './routes';
+import './global.css'; 
 
 function App() {
   return (
-      <Header>
-        Projeto Portifólio
-      </Header>
+    <Routes />
   );
 }
 
