@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 
 import Footer from './components/Footer';
 import Sitemap from './pages/Sitemap';
+import Header from './components/Header';
 
 export default function Routes() {
     const routes = [
@@ -51,6 +52,7 @@ export default function Routes() {
     ]
     return (
         <BrowserRouter>
+            <Header />
             <Switch>
                 {routes.map(route => (<Route key={route.name} {...route}></Route>))}
             </Switch>

@@ -21,17 +21,17 @@ export default function Footer() {
                     <ul>   
                         <div>
                             <span>All Rights Reserved © 2020.&nbsp;  
-                                <Link className="button" to="/sitemap">
+                                <Link  to="/sitemap">
                                     Sitemap
                                 </Link>
                             </span>
                         </div>   
-                        <li><img src={LogoTwitter} alt="logo twitter"/></li>
-                        <li><img src={LogoFacebook} alt="logo Facebook"/></li>
-                        <li><img src={LogoInstagram} alt="logo Instagram"/></li>
-                        <li><img src={LogoLinkedin} alt="logo Linkedin"/></li>
-                        <li><img src={LogoReddit} alt="logo Reddit"/></li>
-                        <li><img src={LogoSkype} alt="logo Skype"/></li>
+                        <li><Link><img src={LogoTwitter} alt="logo twitter"/></Link></li>
+                        <li><Link><img src={LogoFacebook} alt="logo Facebook"/></Link></li>
+                        <li><Link><img src={LogoInstagram} alt="logo Instagram"/></Link></li>
+                        <li><Link><img src={LogoLinkedin} alt="logo Linkedin"/></Link></li>
+                        <li><Link><img src={LogoReddit} alt="logo Reddit"/></Link></li>
+                        <li><Link><img src={LogoSkype} alt="logo Skype"/></Link></li>
                     </ul>
 
                 </div>
