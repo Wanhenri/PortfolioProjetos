@@ -1,12 +1,13 @@
 .about-container {
     width: 100%;
     max-width: 1520px;
-    height: 100vh;
+    height: 200vh;
     margin: 0 auto;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .about-container .content {
@@ -15,13 +16,11 @@
     background: #FFF6F6;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1) ;
     border-radius: 8px;
-
-
 }
 
 .about-container .content section {
     width: 100%;
-    max-width: 380px;
+    max-width: 1080px;
 }
 
 .about-container .content section h1 {
@@ -34,6 +33,11 @@
     color: #737380;
     line-height: 32px;
 }
+
+.about-container .content section ul, li {
+    text-decoration: none;
+}
+
 
 .about-container .content form {
     width: 100%;
