@@ -26,7 +26,7 @@ export default function Footer() {
                                 </Link>
                             </span>
                         </div>   
-                        <li><Link><img src={LogoTwitter} alt="logo twitter"/></Link></li>
+                        <li><Link ><img src={LogoTwitter} alt="logo twitter"/></Link></li>
                         <li><Link><img src={LogoFacebook} alt="logo Facebook"/></Link></li>
                         <li><Link><img src={LogoInstagram} alt="logo Instagram"/></Link></li>
                         <li><Link><img src={LogoLinkedin} alt="logo Linkedin"/></Link></li>
