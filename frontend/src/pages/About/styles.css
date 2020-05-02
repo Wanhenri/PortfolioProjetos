@@ -23,6 +23,11 @@
     max-width: 1080px;
 }
 
+.about-container .content span {
+    font-size: 16px;
+    margin-left: 24px;
+}
+
 .about-container .content section h1 {
     margin: 64px 0 32px ;
     font-size: 32px;
@@ -37,6 +42,7 @@
 .about-container .content section ul, li {
     text-decoration: none;
 }
+
 
 
 .about-container .content form {

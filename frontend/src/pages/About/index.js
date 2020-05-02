@@ -4,8 +4,10 @@ import './styles.css';
 import Etec from "../../img/About/etec_santana_de_castro.gif"
 import Unitau from "../../img/About/unitau-logo-1.png"
 import { FaUserGraduate } from 'react-icons/fa'
-import { TiGroup } from 'react-icons/ti'
+import { TiGroup, TiPin, TiCalendar } from 'react-icons/ti'
 import { DiTerminal } from 'react-icons/di'
+import { FaUserTie } from 'react-icons/fa'
+import { GoMarkGithub } from 'react-icons/go'
 
 export default function About() {
     return (
@@ -63,16 +65,16 @@ export default function About() {
             </section>
             <section>
                 <h1>Qualificações</h1>
+                <FaUserTie size={38}/><span>Um pouco mais que seis meses de experiência na área de Engenharia</span><br />
                 <DiTerminal size={38}/><span> Quatro anos de experiência com linguagens de programação</span><br />
-                <TiGroup size={38}/><span>  Facilidade de trabalhar em equipe</span>
-                <ul>
-                    <li>Um pouco mais que seis meses de experiência na área de Engenharia</li>
-                    <li>Quatro anos de experiência com linguagens de programação</li>
-                    <li>Conhecimentos em Front-end, Análise de dados, Ferramentas de gestão e softwares de modelagem mecânica</li>
-                    <li>Desenvolvimento de duas ferramentas de plotagem e analise estatística, SCANPLOT e PrecAnalise, para dados de Precipitação (chuva)</li>
-                    <li>Elevada capacidade de organização e pro atividade.</li>
-                    
-                </ul>                
+                <TiGroup size={38}/><span>  Facilidade de trabalhar em equipe</span><br />           
+                <GoMarkGithub size={38}/>
+                    <span>
+                        Desenvolvimento de duas ferramentas de plotagem e analise estatística, SCANPLOT e PrecAnalise, para dados de Precipitação (chuva)
+                    </span><br />
+                <TiPin size={38}/><span>Conhecimentos em Front-end, Análise de dados, Ferramentas de gestão e softwares de modelagem mecânica</span><br />
+                <TiCalendar size={38}/><span>Elevada capacidade de organização e pro atividade.</span><br />
+             
             </section>
         </div>
     </div>

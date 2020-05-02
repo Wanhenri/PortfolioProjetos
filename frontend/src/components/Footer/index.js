@@ -1,18 +1,53 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import styled from "styled-components";
 
 import "./styles.css";
 
-import LogoTwitter from '../../img/Footer/logo-twitter.png';
-import LogoFacebook from '../../img/Footer/logo-facebook.png';
-import LogoInstagram from '../../img/Footer/logo-instagram.png';
-import LogoLinkedin from '../../img/Footer/logo-linkedin.png';
-import LogoReddit from '../../img/Footer/logo-reddit.png';
-import LogoSkype from '../../img/Footer/logo-skype.png';
-
+export const Image = styled.img`
+  flex: 1 0 auto;
+  height: 130px;
+  max-width: 100px;
+  object-fit: cover;
+  margin: 5px;
+`;
 
 
 export default function Footer() {
+
+    const redesocial = [
+        {
+          name: "LogoTwitter",
+          image: require("../../img/Footer/logo-twitter.png"),
+          link: ""
+        },
+        {
+            name: "LogoFacebook",
+            image: require("../../img/Footer/logo-facebook.png"),
+            link: "https://www.facebook.com/profile.php?id=100028393600095"
+          },
+        {
+            name: "LogoInstagram",
+            image: require("../../img/Footer/logo-instagram.png"),
+            link: "https://www.instagram.com/wan_henri/"
+          },
+          {
+            name: "LogoLinkedin",
+            image: require("../../img/Footer/logo-linkedin.png"),
+            link: "https://www.linkedin.com/in/wandersonhenrique/"
+          },
+          {
+            name: "LogoReddit",
+            image: require("../../img/Footer/logo-reddit.png"),
+            link: ""
+          },
+          {
+            name: "LogoSkype",
+            image: require("../../img/Footer/logo-skype.png"),
+            link: ""
+          },
+    ];
+
     return (
         <div className="footer-container">   
                  
@@ -26,12 +61,12 @@ export default function Footer() {
                                 </Link>
                             </span>
                         </div>   
-                        <li><Link ><img src={LogoTwitter} alt="logo twitter"/></Link></li>
-                        <li><Link><img src={LogoFacebook} alt="logo Facebook"/></Link></li>
-                        <li><Link><img src={LogoInstagram} alt="logo Instagram"/></Link></li>
-                        <li><Link><img src={LogoLinkedin} alt="logo Linkedin"/></Link></li>
-                        <li><Link><img src={LogoReddit} alt="logo Reddit"/></Link></li>
-                        <li><Link><img src={LogoSkype} alt="logo Skype"/></Link></li>
+
+                        {redesocial.map((icones) => (
+                           <li> <a href={icones.link} target="_blank" rel="noopener noreferrer">
+                            <Image key={icones.name} src={icones.image} />
+                        </a></li>
+                        ))}
                     </ul>
 
                 </div>
