@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import Sitemap from './pages/Sitemap';
 import Header from './components/Header';
 
+import SideBar from './components/Sidebar'
+
 export default function Routes() {
     const routes = [
         {
@@ -53,6 +55,7 @@ export default function Routes() {
     return (
         <BrowserRouter>
             <Header />
+            <SideBar />
             <Switch>
                 {routes.map(route => (<Route key={route.name} {...route}></Route>))}
             </Switch>

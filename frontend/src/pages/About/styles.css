@@ -30,7 +30,7 @@
 
 .about-container .content section h1 {
     margin: 64px 0 32px ;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .about-container .content section p{
@@ -58,7 +58,7 @@
 
 .about-container .content form h1 {
     margin: 64px 0 32px ;
-    font-size: 32px;
+    font-size: 24px;
 }
 .about-container .content form input{
 margin-top: 8px;
