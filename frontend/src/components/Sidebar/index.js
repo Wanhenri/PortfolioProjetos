@@ -1,5 +1,10 @@
-import React from 'react'
+import React from 'react';
 import styled from "styled-components";
+import { DiGithubBadge } from 'react-icons/di';
+import { BsCardChecklist, BsKanban } from 'react-icons/bs'
+import { AiOutlineBook } from 'react-icons/ai'
+import { FaIdCard } from 'react-icons/fa'
+
 
 const SidebarContainer = styled.div`
     display: flex;
@@ -25,7 +30,11 @@ const SidebarMenuItem = styled.li`
     height: 40px;
     width: 100%;
     padding-left: 30px;
-    align-items: center;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 40px;
     &:hover {
         background: rgba(255, 255, 255, 0.05);
         box-shadow: inset 3px 0 0 0 #ffffff;
@@ -35,7 +44,8 @@ const SidebarMenuItem = styled.li`
 
 const Icon = styled.svg`
         width: 20px;
-        height: 20px;
+        height: 20px;       
+      
 `
 
 const SidebarMenuItemLabel = styled.p`
@@ -49,6 +59,9 @@ const SidebarMenuItemLabel = styled.p`
         font-weight: 600;
         text-align: left;
         padding: 12px 0px;
+        
+
+        
        
 `
 const MenuLogo = styled.div`
@@ -67,6 +80,40 @@ const MenuLogo = styled.div`
 `
 
 export default function SideBar() {
+
+    const menuSideBarItem = [
+        {
+            id: 1,
+            name: "Resumo" ,
+            description: "Um curriculo resumido",
+            icon: <FaIdCard size={26}/>
+        },
+        {
+            id: 2,
+            name: "Metas" ,
+            description: "Metas estabelecidas",
+            icon: <BsKanban size={26}/>
+        },
+        {
+            id: 3,
+            name: "GitHub" ,
+            description: "Repositorio de projetos",
+            icon: <DiGithubBadge size={26}/>
+        },
+        {
+            id: 4,
+            name: "Publicações" ,
+            description: "Publicações desenvolvidas no decorrer da vida",
+            icon: <AiOutlineBook size={26}/>
+        },
+        {
+            id: 5,
+            name: "Brag Document" ,
+            description: "descrever o que é isso",
+            icon: <BsCardChecklist size={26}/>
+        },
+    ];
+
     return (
         <SidebarContainer>
             <SidebarMenu>
@@ -83,30 +130,16 @@ export default function SideBar() {
                     </Icon>
                         designtech
                 </MenuLogo>
-                <SidebarMenuItem>
-                    <Icon></Icon>
-                    <SidebarMenuItemLabel>Dashboard</SidebarMenuItemLabel>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                    <Icon></Icon>
-                    <SidebarMenuItemLabel>Service Alerts</SidebarMenuItemLabel>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                    <Icon></Icon>
-                    <SidebarMenuItemLabel>Customer Tickets</SidebarMenuItemLabel>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                    <Icon></Icon>
-                    <SidebarMenuItemLabel>Archive</SidebarMenuItemLabel>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                    <Icon></Icon>
-                    <SidebarMenuItemLabel>Library</SidebarMenuItemLabel>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                    <Icon></Icon>
-                    <SidebarMenuItemLabel>Deliveries</SidebarMenuItemLabel>
-                </SidebarMenuItem>
+                <FaIdCard size={26}/>
+                <BsKanban size={26}/>
+                <DiGithubBadge size={26}/>
+                <AiOutlineBook size={26}/>
+                <BsCardChecklist size={26}/>
+                <SidebarMenuItem>              
+                    {menuSideBarItem.map((Itens) =>(
+                     <SidebarMenuItemLabel key={Itens.id}><Icon>{Itens.icon}</Icon> {Itens.name}</SidebarMenuItemLabel>
+                    ))}                    
+                </SidebarMenuItem>                
             </SidebarMenu>
         </SidebarContainer>
     )
