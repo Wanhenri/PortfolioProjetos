@@ -2,11 +2,9 @@
     width: 100%;
     max-width: 1520px;
     height: 100vh;
-    margin: 0 auto;
+    margin: 10px auto;
+    
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .blog-container .content {
