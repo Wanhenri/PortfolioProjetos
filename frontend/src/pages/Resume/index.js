@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 
-import Title from '../../components/Title'
-import Subtitle from '../../components/Subtitle'
+import Title from '../../objects/Title';
+import Subtitle from '../../objects/Subtitle';
 
 import './styles.css';
 

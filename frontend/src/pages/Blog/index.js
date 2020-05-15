@@ -1,43 +1,12 @@
 import React from 'react';
-import styled from "styled-components";
 
 import Title from '../../objects/Title'
 import Subtitle from '../../objects/Subtitle'
+import { Text } from '../../objects/Text'
+import { Strong } from '../../objects/Strong'
+import { Cards } from '../../objects/Cards'
 
 import './styles.css';
-
-export const Cards = styled.section`
-  display: table;
-  table-layout: fixed;
-  max-width: 90%;
-  flex-grow: 1;
-  color: black;
-  margin-bottom: 12px;
-
-  padding: 25px;
-  background-color:#ffffff;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1) ;
-  border-radius: 20px;
-  margin-left:14px
-`;
-
-export const Strong = styled.strong`
-color: #444444;
-font-size: 1.5em;
-`;
-
-const Text = styled.p`
-  color: #6B6B6B;
-  font-size: var(--size-very-big);
-  line-height: 1.1em;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #2e2e33;
-  margin-bottom:20px;
-  text-align: justify
-  
-  
-`;
 
 
 export default function Blog () {
@@ -66,7 +35,8 @@ export default function Blog () {
             <Cards>
                 <Strong>CDO e Wgrib2 para dados de GFS</Strong>
                 <Title content={"Titulo de alguma coisa"}/>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                <Text>  
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
                     It has roots in a piece of classical Latin literature from 45 BC, 
                     making it over 2000 years old. Richard McClintock, a Latin professor
                     at Hampden-Sydney College in Virginia, looked up one of the more 
@@ -84,9 +54,10 @@ export default function Blog () {
                     by Cicero are also reproduced in their exact original 
                     form, accompanied by English versions from the 1914
                     translation by H. Rackham.
-                </p>
+                </Text>
                 <Title content={"Titulo de alguma coisa"}/>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                <Text>  
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
                     It has roots in a piece of classical Latin literature from 45 BC, 
                     making it over 2000 years old. Richard McClintock, a Latin professor
                     at Hampden-Sydney College in Virginia, looked up one of the more 
@@ -104,12 +75,13 @@ export default function Blog () {
                     by Cicero are also reproduced in their exact original 
                     form, accompanied by English versions from the 1914
                     translation by H. Rackham.
-                </p>
+                </Text>
             </Cards>
             <Cards>
                 <Strong>Skills conhecidas recentemente!</Strong>
                 <Title content={"Titulo de alguma coisa"}/>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                <Text>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
                     It has roots in a piece of classical Latin literature from 45 BC, 
                     making it over 2000 years old. Richard McClintock, a Latin professor
                     at Hampden-Sydney College in Virginia, looked up one of the more 
@@ -127,9 +99,10 @@ export default function Blog () {
                     by Cicero are also reproduced in their exact original 
                     form, accompanied by English versions from the 1914
                     translation by H. Rackham.
-                </p>
+                </Text>
                 <Title content={"Titulo de alguma coisa"}/>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                <Text>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
                     It has roots in a piece of classical Latin literature from 45 BC, 
                     making it over 2000 years old. Richard McClintock, a Latin professor
                     at Hampden-Sydney College in Virginia, looked up one of the more 
@@ -147,7 +120,7 @@ export default function Blog () {
                     by Cicero are also reproduced in their exact original 
                     form, accompanied by English versions from the 1914
                     translation by H. Rackham.
-                </p>
+                </Text>
             </Cards>
             <Cards>
                <Strong>Repertório de musica</Strong>
