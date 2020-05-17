@@ -21,7 +21,7 @@ export const DateBlog = styled.p`
   line-height: 1.1em;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px
+  padding-left: 30px
 `;
 
 export const InfoBlogWrapper = styled.section`
@@ -66,7 +66,8 @@ export default function Blog () {
                     <FaHeart size={26} color='red' />
                     <FaShareAlt size={26} color='blue'/>
                 </ReactionBlogWrapper>
-            </Cards> 
+            </Cards>
+             
                            
         </div>
         
