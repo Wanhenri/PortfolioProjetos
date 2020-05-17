@@ -1,7 +1,14 @@
 .blog-container {
     width: 100%;
-    max-width: 1520px;
+    max-width: 470px;
     height: 100vh;
-    margin: 10px auto;    
+    margin: 10px auto;   
+    margin: 0 auto;
+    padding-bottom: 163px;
+
+    display: flex;
+    justify-content: center; 
+    
+    
 
 }

@@ -8,12 +8,14 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font: 400 16px Open Sans, sans-serif;
     background: #f0f0f5;
     -webkit-font-smoothing: antialiased;
+    padding-bottom: 163px;
 }
 
 input, button, textarea {

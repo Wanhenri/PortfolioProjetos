@@ -9,9 +9,13 @@ export const Cards = styled.section`
   margin-bottom: 12px;
   margin-top: 12px;
 
-  padding: 25px;
-  background-color:#ffffff;
+  background: #FAFAFA;
+  border: 1px solid #FEFEFE;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1) ;
-  border-radius: 5px;
+  border-radius: 45px;
   margin-left:14px
 `;
+

@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from "styled-components";
+import { FaCalendarAlt, FaHeart, FaComments, FaShareAlt } from 'react-icons/fa';
 
 import Title from '../../objects/Title'
 import Subtitle from '../../objects/Subtitle'
@@ -9,13 +11,42 @@ import { Cards } from '../../objects/Cards'
 import './styles.css';
 
 
+export const DateBlogWrapper = styled.div`
+  text-align: center;
+  margin-bottom: 10px;
+`;
+export const DateBlog = styled.p`
+  color: #6B6B6B;
+  font-size: var(--size-very-big);
+  line-height: 1.1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px
+`;
+
+export const InfoBlogWrapper = styled.section`
+    display: flex;
+    padding-left: 30px;
+    flex-direction: row;
+`;
+
+export const ReactionBlogWrapper = styled.section`
+    display: flex;
+    padding-left: 30px;
+    justify-content: 'space-between'
+    flex-direction: row;
+    
+`;
+
 export default function Blog () {
     return (
         <div className="blog-container" >            
             <Cards>
                 <Strong>Aplicação da ferramenta Wgrib2 na manipulação de dados</Strong>
-                <p>teste</p>
-                <p>teste2</p>
+                <InfoBlogWrapper>
+                    <DateBlog><FaCalendarAlt size={26}  style={{paddingRight:'10px' }}/>Julho 21, 2020</DateBlog>
+                    <DateBlog><FaComments size={26} style={{paddingRight:'10px' }}/>Comentários</DateBlog>
+                </InfoBlogWrapper>
                 <Title content={"Wanderson Henrique dos Santos"}/>
                 <Subtitle content={"teste"} />
                 <Text>
@@ -31,140 +62,12 @@ export default function Blog () {
                     with desktop publishing software like Aldus PageMaker
                     including versions of Lorem Ipsum."
                 </Text>
-            </Cards>
-            <Cards>
-                <Strong>CDO e Wgrib2 para dados de GFS</Strong>
-                <Title content={"Titulo de alguma coisa"}/>
-                <Text>  
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    making it over 2000 years old. Richard McClintock, a Latin professor
-                    at Hampden-Sydney College in Virginia, looked up one of the more 
-                    obscure Latin words, consectetur, from a Lorem Ipsum passage, and 
-                    going through the cites of the word in classical literature, 
-                    discovered the undoubtable source. Lorem Ipsum comes from sections 
-                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-                    of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                    treatise on the theory of ethics, very popular during the Renaissance.
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                    The standard chunk of Lorem Ipsum used since the 1500s 
-                    is reproduced below for those interested. Sections 1.10.32
-                    and 1.10.33 from "de Finibus Bonorum et Malorum" 
-                    by Cicero are also reproduced in their exact original 
-                    form, accompanied by English versions from the 1914
-                    translation by H. Rackham.
-                </Text>
-                <Title content={"Titulo de alguma coisa"}/>
-                <Text>  
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    making it over 2000 years old. Richard McClintock, a Latin professor
-                    at Hampden-Sydney College in Virginia, looked up one of the more 
-                    obscure Latin words, consectetur, from a Lorem Ipsum passage, and 
-                    going through the cites of the word in classical literature, 
-                    discovered the undoubtable source. Lorem Ipsum comes from sections 
-                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-                    of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                    treatise on the theory of ethics, very popular during the Renaissance.
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                    The standard chunk of Lorem Ipsum used since the 1500s 
-                    is reproduced below for those interested. Sections 1.10.32
-                    and 1.10.33 from "de Finibus Bonorum et Malorum" 
-                    by Cicero are also reproduced in their exact original 
-                    form, accompanied by English versions from the 1914
-                    translation by H. Rackham.
-                </Text>
-            </Cards>
-            <Cards>
-                <Strong>Skills conhecidas recentemente!</Strong>
-                <Title content={"Titulo de alguma coisa"}/>
-                <Text>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    making it over 2000 years old. Richard McClintock, a Latin professor
-                    at Hampden-Sydney College in Virginia, looked up one of the more 
-                    obscure Latin words, consectetur, from a Lorem Ipsum passage, and 
-                    going through the cites of the word in classical literature, 
-                    discovered the undoubtable source. Lorem Ipsum comes from sections 
-                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-                    of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                    treatise on the theory of ethics, very popular during the Renaissance.
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                    The standard chunk of Lorem Ipsum used since the 1500s 
-                    is reproduced below for those interested. Sections 1.10.32
-                    and 1.10.33 from "de Finibus Bonorum et Malorum" 
-                    by Cicero are also reproduced in their exact original 
-                    form, accompanied by English versions from the 1914
-                    translation by H. Rackham.
-                </Text>
-                <Title content={"Titulo de alguma coisa"}/>
-                <Text>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    making it over 2000 years old. Richard McClintock, a Latin professor
-                    at Hampden-Sydney College in Virginia, looked up one of the more 
-                    obscure Latin words, consectetur, from a Lorem Ipsum passage, and 
-                    going through the cites of the word in classical literature, 
-                    discovered the undoubtable source. Lorem Ipsum comes from sections 
-                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-                    of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                    treatise on the theory of ethics, very popular during the Renaissance.
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                    The standard chunk of Lorem Ipsum used since the 1500s 
-                    is reproduced below for those interested. Sections 1.10.32
-                    and 1.10.33 from "de Finibus Bonorum et Malorum" 
-                    by Cicero are also reproduced in their exact original 
-                    form, accompanied by English versions from the 1914
-                    translation by H. Rackham.
-                </Text>
-            </Cards>
-            <Cards>
-               <Strong>Repertório de musica</Strong>
-                <Title content={"Titulo de alguma coisa"}/>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    making it over 2000 years old. Richard McClintock, a Latin professor
-                    at Hampden-Sydney College in Virginia, looked up one of the more 
-                    obscure Latin words, consectetur, from a Lorem Ipsum passage, and 
-                    going through the cites of the word in classical literature, 
-                    discovered the undoubtable source. Lorem Ipsum comes from sections 
-                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-                    of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                    treatise on the theory of ethics, very popular during the Renaissance.
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                    The standard chunk of Lorem Ipsum used since the 1500s 
-                    is reproduced below for those interested. Sections 1.10.32
-                    and 1.10.33 from "de Finibus Bonorum et Malorum" 
-                    by Cicero are also reproduced in their exact original 
-                    form, accompanied by English versions from the 1914
-                    translation by H. Rackham.
-                </p>
-                <Title content={"Titulo de alguma coisa"}/>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    making it over 2000 years old. Richard McClintock, a Latin professor
-                    at Hampden-Sydney College in Virginia, looked up one of the more 
-                    obscure Latin words, consectetur, from a Lorem Ipsum passage, and 
-                    going through the cites of the word in classical literature, 
-                    discovered the undoubtable source. Lorem Ipsum comes from sections 
-                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-                    of Good and Evil) by Cicero, written in 45 BC. This book is a 
-                    treatise on the theory of ethics, very popular during the Renaissance.
-                    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                    The standard chunk of Lorem Ipsum used since the 1500s 
-                    is reproduced below for those interested. Sections 1.10.32
-                    and 1.10.33 from "de Finibus Bonorum et Malorum" 
-                    by Cicero are also reproduced in their exact original 
-                    form, accompanied by English versions from the 1914
-                    translation by H. Rackham.
-                </p>
-            </Cards>
+                <ReactionBlogWrapper>
+                    <FaHeart size={26} color='red' />
+                    <FaShareAlt size={26} color='blue'/>
+                </ReactionBlogWrapper>
+            </Cards> 
+                           
         </div>
         
     );
