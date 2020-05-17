@@ -1,15 +1,21 @@
 .header-container {
-    display:flex; 
-    flex-direction:column; 
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .header-container header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     padding: 4px;
-    background-color:#FFFF;
+    background-color: #FFFF;
     height: 50px;
     font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,19 +28,15 @@
 }
 */
 
-.header-container header ul  {
+.header-container header ul {
     display: flex;
     list-style: none;
-    justify-content: right;
-    align-items: right;
-    padding-right: 5px;
-    padding-top: 4px;
-        
+    margin-right: 5px;
+    height: 50px;
 }
 
 .header-container header img {
-    height: 20px; 
-    padding-right: 4px;
-    margin-bottom: 5px;
-    margin-right: 10px;
+    height: 25px;
+    width: auto;
+    margin: auto 5px;
 }

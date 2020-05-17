@@ -1,7 +1,5 @@
 .bragdocument-container {
     width: 100%;
-    max-width: 1520px;
-    height: 100vh;
     margin: 0 auto;
 
 }
@@ -10,7 +8,7 @@
     width: 100%;
     padding: 96px;
     background: #FFF6F6;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 
     display: flex;
@@ -24,11 +22,11 @@
 }
 
 .bragdocument-container .content section h1 {
-    margin: 64px 0 32px ;
+    margin: 64px 0 32px;
     font-size: 32px;
 }
 
-.bragdocument-container .content section p{
+.bragdocument-container .content section p {
     font-size: 18px;
     color: #737380;
     line-height: 32px;
@@ -39,28 +37,29 @@
     max-width: 450px;
 }
 
-.bragdocument-container .content form p{
+.bragdocument-container .content form p {
     font-size: 18px;
     color: #737380;
     line-height: 32px;
 }
 
 .bragdocument-container .content form h1 {
-    margin: 64px 0 32px ;
+    margin: 64px 0 32px;
     font-size: 32px;
 }
-.bragdocument-container .content form input{
-margin-top: 8px;
+
+.bragdocument-container .content form input {
+    margin-top: 8px;
 }
 
-.bragdocument-container .content form .input-group{
-    display: flex;    
+.bragdocument-container .content form .input-group {
+    display: flex;
 }
 
-.bragdocument-container .content form .input-group input + input {
+.bragdocument-container .content form .input-group input+input {
     margin-left: 8px;
 }
 
 .bragdocument-container .content button {
-background: #e02041 ;
+    background: #e02041;
 }
