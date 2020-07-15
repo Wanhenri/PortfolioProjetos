@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { DiGithubBadge } from "react-icons/di";
 import { BsCardChecklist, BsKanban } from "react-icons/bs";
 import { AiOutlineBook } from "react-icons/ai";
-import { FaIdCard } from "react-icons/fa";
+import { FaIdCard, FaTools, FaToolbox } from "react-icons/fa";
 
 import Resume from "../../pages/Resume";
 import BragDocument from "../../pages/BragDocument";
 import Publicacoes from "../../pages/Publicacoes";
+import { IoIosConstruct } from "react-icons/io";
+import { GoChecklist } from "react-icons/go";
 
 const SidebarContainer = styled.section`
   display: flex;
@@ -124,13 +126,38 @@ export default function SideBar() {
     },
     {
       id: 3,
+      name: "Habilidades",
+      description: "Metas estabelecidas",
+      icon: <IoIosConstruct size={26} />,
+      link: "https://trello.com/b/mO8WDqh4/cursos",
+    },
+    {
+      id: 4,
       name: "GitHub",
       description: "Repositorio de projetos",
       icon: <DiGithubBadge size={26} />,
       link: "https://github.com/Wanhenri",
     },
     {
-      id: 4,
+      id: 6,
+      name: "Projetos",
+      description: "Publicações desenvolvidas no decorrer da vida",
+      icon: <GoChecklist size={26} />,
+      exact: true,
+      component: Publicacoes,
+      path: "/publicacoes",
+    },
+    {
+      id: 7,
+      name: "Serviços",
+      description: "Publicações desenvolvidas no decorrer da vida",
+      icon: <FaToolbox size={26} />,
+      exact: true,
+      component: Publicacoes,
+      path: "/publicacoes",
+    },
+    {
+      id: 8,
       name: "Publicações",
       description: "Publicações desenvolvidas no decorrer da vida",
       icon: <AiOutlineBook size={26} />,
@@ -139,7 +166,7 @@ export default function SideBar() {
       path: "/publicacoes",
     },
     {
-      id: 5,
+      id: 9,
       name: "Brag Document",
       description: "descrever o que é isso",
       icon: <BsCardChecklist size={26} />,

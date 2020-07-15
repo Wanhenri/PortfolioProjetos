@@ -15,12 +15,16 @@
     left: 0;
     width: 100%;
     padding: 4px;
-    background-color: #FFFF;
+    background-color:#252529;
     height: 50px;
     font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
 }
+
+/*
+background-color: #FFFF;
+*/
 
 /*
 .header-container header .home {

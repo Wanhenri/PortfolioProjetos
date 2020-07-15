@@ -1,6 +1,8 @@
 import React from "react";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { FaCommentDots } from "react-icons/fa";
+import { FaBlogger, FaHome, FaCode, FaAirbnb, FaCommentDots } from "react-icons/fa";
+import { GoMail } from "react-icons/go";
 
 import "./styles.css";
 
@@ -11,39 +13,39 @@ import services from "../../img/Header/services.png";
 import blog from "../../img/Header/blog.png";
 import Contact from "../../img/Header/contact.png";
 
-//export const Image = styled.img`
-//  height: 25px;
-//  max-width: 25px;
-//  object-fit: cover;
-//  margin: 5px;
-//`;
+export const Image = styled.img`
+  height: 25px;
+  max-width: 25px;
+  object-fit: cover;
+  margin: 5px;
+`;
+
 
 export default function Header({ children }) {
-  const redesocial = [
+  const headerIcon = [
     {
       name: "Home",
-      image: require("../../img/Footer/logo-twitter.png"),
+      image: <FaHome color="white" size={26}/>,
       link: "",
+      path: "/"
     },
     {
-      name: "About",
-      image: require("../../img/Footer/logo-twitter.png"),
+      name: "Blog",
+      image: <FaBlogger color="white" size={26}/>,
       link: "",
+      path: "/blog"
     },
     {
-      name: "projects",
-      image: require("../../img/Footer/logo-twitter.png"),
+      name: "airbnb",
+      image: <FaAirbnb color="white" size={26}/>,
       link: "",
-    },
-    {
-      name: "services",
-      image: require("../../img/Footer/logo-twitter.png"),
-      link: "",
+      path: "/airbnb"
     },
     {
       name: "Contact",
-      image: require("../../img/Footer/logo-twitter.png"),
+      image: <GoMail color="white" size={26}/>,
       link: "",
+      path: "/contact"
     },
   ];
 
@@ -51,43 +53,13 @@ export default function Header({ children }) {
     <div className="header-container">
       <header>
         <ul>
-          <li>
-            <Link to="/">
-              <img
-                src={Home}
-                className="home"
-                alt="Home"
-                width="25"
-                height="25"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link to="/about">
-              <img src={About} alt="About" width="25" height="25" />
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/projects">
-              <img src={projects} alt="projects" width="25" height="25" />
-            </Link>
-          </li>
-          <li>
-            <Link to="/services">
-              <img src={services} alt="Services" width="25" height="25" />
-            </Link>
-          </li>
-          <li>
-            <Link to="/blog">
-              <img src={blog} alt="blog" width="25" height="25" />
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact">
-              <img src={Contact} alt="Contact" width="25" height="25" />
-            </Link>
-          </li>
+          {headerIcon.map((icons) =>(
+            <li>
+              <Link to={icons.path}>
+                <Image key={icons.name} />{icons.image}
+              </Link>
+            </li>
+          ))}
         </ul>
       </header>
     </div>
